@@ -2,12 +2,14 @@ package com.upiiz.practica1_2.heroes.infraestructure.out.persistence;
 
 import java.util.List;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import com.upiiz.practica1_2.heroes.domain.models.Heroe;
 import com.upiiz.practica1_2.heroes.domain.ports.out.HeroeRepository;
 
 @Component
+@Profile("!memoria")
 public class HeroeRepositoryImpl implements HeroeRepository {
     private final HeroeRepositoryJpa heroeRepositoryJpa;
 
