@@ -55,8 +55,8 @@ public class HeroeController {
         return heroeUseCase.listarPorEpoca(epoca);
     }
 
-    @GetMapping("/movimiento")
-    public List<Heroe> getHeroePorMovimiento(@RequestParam String movimiento) {
+    @GetMapping("/movimiento/{movimiento}")
+    public List<Heroe> getHeroePorMovimiento(@PathVariable String movimiento) {
         return heroeUseCase.listarPorMovimiento(movimiento);
     }
 
