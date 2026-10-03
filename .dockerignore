@@ -1,0 +1,13 @@
+.git
+.github
+.vscode
+.idea
+.mvn
+target/
+HELP.md
+Dockerfile
+.dockerignore
+
+# Credenciales: nunca dentro de la imagen
+.env
+**/application-local.properties
